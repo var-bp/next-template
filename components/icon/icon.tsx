@@ -9,6 +9,7 @@ interface Icons {
   [key: string]: (props: Props) => JSX.Element;
 }
 
+// https://svg2jsx.com/
 const ICONS: Icons = {
   vercel: (props: Props) => (
     <svg

@@ -1,7 +1,7 @@
 import Document, { DocumentContext, Html, Head, Main, NextScript } from 'next/document';
 
 // https://nextjs.org/docs/advanced-features/custom-document
-class MyDocument extends Document {
+class AppDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps };
@@ -22,7 +22,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             referrerPolicy="no-referrer"
           />
-          <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
           <meta name="theme-color" content="#000000" />
         </Head>
@@ -35,4 +35,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default AppDocument;
